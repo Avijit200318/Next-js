@@ -1,6 +1,6 @@
-import {connect} from "../../../dbConfig/dbConfig";
+import {connect} from "@/dbConfig/dbConfig";
 // import {connect} from "@/dbConfig/dbConfig"; if I install it during package installation
-import userModel from "../../../../models/userModel";
+import userModel from "@/models/userModel";
 import { NextRequest, NextResponse } from "next/server";
 import bcryptjs from "bcryptjs";
 
