@@ -32,7 +32,7 @@ export async function POST(request: NextRequest){
 
         const res = NextResponse.json({meassage: "user login successfully", success: true}, {status: 200});
 
-        res.cookies.set("next_token", token, {httpOnly: true});
+        res.cookies.set("next_token", token, {httpOnly: true, maxAge: 60 * 60});
         return res;
 
     }catch(error: any){
